@@ -3,97 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Navbar Example</title>
+  <title>Bootstrap Navbar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand me-2" href="#">
-                <img src="img/logo.png" alt="Logo" style="height: 30px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Infantil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Primaria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Eso</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Bachillerato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Ciclos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Infantil</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Primaria</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Eso</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Bachillerato</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Ciclos</a></li>
+        </ul>
     </nav>
-    <div class="container mt-4 flex-grow-1">
-        <div class="row">
-            <div class="col-sm-3 bg-dark text-white d-flex justify-content-center align-items-center">Información</div>
-            <div class="col-sm-3 bg-light d-flex justify-content-center align-items-center">HackAton</div>
-            <div class="col-sm-3 bg-light d-flex justify-content-center align-items-center">Quienes Somos</div>
-            <div class="col-sm-3 bg-dark text-white d-flex justify-content-center align-items-center">Secretaría</div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark">
-        <h1 class="text-white d-flex justify-content-center">HackAthon</h1>
-    </div>
-    <div class="d-flex flex-grow-1 mb-4">
-        <div class="container col-10 bg-dark text-white">
-            <h1>En qué consiste</h1>
-            <p>Es una excelente oportunidad para seguir construyendo juntos en RED, tal y como dice nuestros lemas #educamosjuntos #juntosesmejor, como misión compartida y en esta labor de formar "Hombres y mujeres capaces de transformar el mundo".</p>
-            <ul class="list-group list-group-flush">
+    
+    <div class="container mt-4">
+        <div class="container bg-dark text-white">
+            <h1 class="text-center">En qué consiste</h1>
+            <p>Es una oportunidad para construir en RED con nuestros lemas #educamosjuntos #juntosesmejor, en nuestra misión de formar "Hombres y mujeres capaces de transformar el mundo".</p>
+            <ul class="list-group pb-3">
                 <li class="list-group-item">09:00 - Acto de Inauguración</li>
                 <li class="list-group-item">09:00 - 11:00  Visita de otros colegios e institutos</li>
                 <li class="list-group-item">11:00 - 12:00  Descanso</li>
                 <li class="list-group-item">12:00 - 14:00  Visita alumnos y alumnas de Escuela Virgen de Guadalupe, personal docente y no docente</li>
                 <li class="list-group-item">14:00 - 16:00  Almuerzo Networking</li>
-                <li class="list-group-item">16:00 - 18:00  Jornada puertas abiertas: abierto a todas las familias de la Escuela, del barrio y familias interesadas en nuestra Escuela</li>
+                <li class="list-group-item">16:00 - 18:00  Jornada puertas abiertas</li>
                 <li class="list-group-item">18:00 - Jornada puertas abiertas de bachillerato y ciclos formativos</li>
             </ul>
         </div>
-        <div class="container col-2">
-            <h2 class="text-dark d-flex justify-content-center">¿Te ha gustado?</h2>
-            <div class="container mt-4 d-flex justify-content-center">
-                <form class="border border-dark rounded p-4 bg-dark text-white">
-                    <div class="mb-3">
-                        <label for="originalidad" class="form-label">Originalidad:</label>
-                        <input type="range" class="form-range" min="0" max="10" id="originalidad">
-                    </div>
-                    <div class="mb-3">
-                        <label for="entretenimiento" class="form-label">Entretenimiento:</label>
-                        <input type="range" class="form-range" min="0" max="10" id="entretenimiento">
-                    </div>
-                    <div class="mb-3">
-                        <label for="innovacion" class="form-label">Innovación:</label>
-                        <input type="range" class="form-range" min="0" max="10" id="innovacion">
-                    </div>
-                    <div class="mb-3">
-                        <label for="creatividad" class="form-label">Creatividad:</label>
-                        <input type="range" class="form-range" min="0" max="10" id="creatividad">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
+    
+        <div class="container mt-4">
+            <h2 class="text-center">¿Te ha gustado?</h2>
+            <form class="border p-4 bg-dark text-white">
+                <div class="mb-3">
+                    <label for="originalidad" class="form-label">Originalidad:</label>
+                    <input type="range" class="form-range" min="0" max="10" id="originalidad">
+                </div>
+                <div class="mb-3">
+                    <label for="entretenimiento" class="form-label">Entretenimiento:</label>
+                    <input type="range" class="form-range" min="0" max="10" id="entretenimiento">
+                </div>
+                <div class="mb-3">
+                    <label for="innovacion" class="form-label">Innovación:</label>
+                    <input type="range" class="form-range" min="0" max="10" id="innovacion">
+                </div>
+                <div class="mb-3">
+                    <label for="creatividad" class="form-label">Creatividad:</label>
+                    <input type="range" class="form-range" min="0" max="10" id="creatividad">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
     </div>
-    <footer class="bg-dark text-white py-4 mt-auto">
-        <div class="container">
-            <p class="m-0">Este es el footer de tu página.</p>
-        </div>
-    </footer>
-    <!-- Bootstrap JS y Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
